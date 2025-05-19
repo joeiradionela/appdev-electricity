@@ -36,6 +36,7 @@ function Dashboard() {
             <th style={{ padding: '12px', textAlign: 'center' }}>Voltage (V)</th>
             <th style={{ padding: '12px', textAlign: 'center' }}>Power (W)</th>
             <th style={{ padding: '12px', textAlign: 'center' }}>KWh</th>
+            <th style={{ padding: '12px', textAlign: 'center' }}>Timestamp</th> {}
           </tr>
         </thead>
         <tbody>
@@ -46,6 +47,9 @@ function Dashboard() {
               <td style={{ padding: '12px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>{entry.voltage}</td>
               <td style={{ padding: '12px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>{entry.power}</td>
               <td style={{ padding: '12px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>{entry.kwh}</td>
+              <td style={{ padding: '12px', textAlign: 'center', borderBottom: '1px solid #ddd' }}>
+                {new Date(entry.timestamp).toLocaleString()}
+              </td> {}
             </tr>
           ))}
         </tbody>
