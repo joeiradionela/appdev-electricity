@@ -36,7 +36,7 @@ function Dashboard() {
             <th style={{ padding: '12px', textAlign: 'center' }}>Voltage (V)</th>
             <th style={{ padding: '12px', textAlign: 'center' }}>Power (W)</th>
             <th style={{ padding: '12px', textAlign: 'center' }}>KWh</th>
-            <th style={{ padding: '12px', textAlign: 'center' }}>Timestmp</th> {}
+            <th style={{ padding: '12px', textAlign: 'center' }}>Timestamp</th> {}
           </tr>
         </thead>
         <tbody>
